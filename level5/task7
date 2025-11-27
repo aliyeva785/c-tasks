@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+double f(double res, char op, double x) {
+    if (op == '+') res += x;
+    else if (op == '-') res -= x;
+    else if (op == '*') res *= x;
+    else if (op == '/' && x != 0) res /= x;
+    return res;
+}
+
+int main() {
+    double res, x;
+    char op;
+
+    cout << "Ilk ededi daxil et: ";
+    cin >> res;
+
+    while (true) {
+        cout << "Operator daxil et (+, -, *, /) ve ya q ile bitir: ";
+        cin >> op;
+        if (op == 'q') break;
+
+        cout << "Ededi daxil et: ";
+        cin >> x;
+        res = f(res, op, x);
+        cout << "Netice: " << res << endl;
+    }
+    return 0;
+}

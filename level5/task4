@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+const float pi = 3.14;
+float s(float r) {
+    return pi * r * r;
+float l(float r) {
+    return 2 * pi * r;
+}
+int main() {
+    float r;
+    cout << "Radiusu daxil edin: ";
+    cin >> r;
+
+    cout << "Sahe = " << s(r) << endl;
+    cout << "Cevre = " << l(r) << endl;
+    return 0;
+}

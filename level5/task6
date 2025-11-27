@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+void m(int a) {
+    if (a % 2 == 0)
+        cout << "Cutdur" << endl;
+    else
+        cout << "Tekdir" << endl;
+}
+int main() {
+    int a;
+    cout << "Ededi daxil et: ";
+    cin >> a;
+    m(a);
+    return 0;
+}

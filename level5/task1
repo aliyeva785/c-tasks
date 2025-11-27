@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+void k(int s) {
+    int saat = s / 3600;
+    int deqiqe = (s % 3600) / 60;
+    int saniye = s % 60;
+    cout << saat << " saat; " << deqiqe << " deqiqe; " << saniye << " saniye" << endl;
+}
+int main() {
+    int s;
+    cout << "Saniyeni daxil et: ";
+    cin >> s;
+    k(s);
+    return 0;
+}
